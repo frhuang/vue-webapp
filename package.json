@@ -1,0 +1,52 @@
+{
+  "name": "vue-weflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "set PRODUCTION=1 && webpack --progress",
+    "start": "webpack-dev-server --progress --profile --colors --inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frhuang/vue-weflow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frhuang/vue-weflow/issues"
+  },
+  "homepage": "https://github.com/frhuang/vue-weflow#readme",
+  "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.23.1",
+    "cssnext-loader": "^1.0.1",
+    "express": "^4.14.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.3",
+    "style-loader": "^0.13.1",
+    "swiper": "^3.3.1",
+    "vue": "^1.0.26",
+    "vue-hot-reload-api": "^1.3.3",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.3",
+    "vue-resource": "^0.9.3",
+    "vue-router": "^0.7.13",
+    "vue-style-loader": "^1.0.0",
+    "vuex": "^1.0.0-rc.2",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.6.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-hot-middleware": "^2.12.2",
+    "webpack-zepto": "^0.0.1"
+  }
+}
