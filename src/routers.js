@@ -6,12 +6,16 @@ export default function(router) {
         },
         '/cart': {
             name: 'cart',
-            component(resolve){require(['./views/Cart.vue'], resolve)},
+            component(resolve){require(['./views/Cart.vue'], resolve)}
         },
         '/me':{
             name: 'me',
             component(resolve){ require(['./views/Me.vue'], resolve)},
             subRoutes: {}
+        },
+        '/details/goods': {
+            name: 'goods',
+            component(resolve) { require(['./views/Goods.vue'], resolve)}
         }
     });
 

@@ -1,8 +1,10 @@
 import './assets/css/main.scss';
+import './assets/css/swiper.min.css'
 
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueResource from 'vue-resource';
+import VueLazyLoad from 'vue-lazyload';
 import RouterMap from './routers';
 import AppVue from './App.vue';
 
@@ -10,6 +12,11 @@ const App = Vue.extend(AppVue);
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
+Vue.use(VueLazyLoad, {
+    error: './src/assets/images/lazy.gif',
+    loading: 'http://img.zcool.cn/community/01443f564897a432f87512f6eed753.gif',
+    try: 3
+})
 
 Vue.config.devtools = true;
 
